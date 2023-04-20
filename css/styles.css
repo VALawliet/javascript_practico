@@ -1,0 +1,10 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 200vh;
+    background: radial-gradient(rgb(238, 204, 210), rgb(192, 140, 149), rgb(160, 84, 97));
+
+}
