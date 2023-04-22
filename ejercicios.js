@@ -147,7 +147,7 @@ while(y >= 2){
 
 //1 
 
-var random = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+/* var random = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function first(array){
     console.log(array[6])
@@ -173,4 +173,40 @@ function objects(object){
 
 var dic = {type: "car", wheels: 4, doors: 4};
 
-objects(dic);
+objects(dic); */
+
+const object = {
+    free: "Suscripción free",
+    basic: "suscripción basic",
+    expert: "Suscripción expert",
+    expertduo: "Suscripción expertduo"
+}
+
+function read(sus){
+    if(object[sus]){
+        console.log(object[sus]);
+        return;
+    }
+
+    console.warn("No hay ni madres, we");
+}
+
+const array1 = ["free", "basic", "expert", "expertduo"];
+const array2 = ["Gratis", "Básica", "Experta", "Experta para dos"];
+let varrandom;
+
+varrandom = "hsdhf";
+
+function loop(vars){
+    for(let i = 0; i < array1.length; i++){
+        if(vars == array1[i]){
+            console.log(`Tu suscrupción es ${vars}. Por ende, es ${array2[i]}`);
+            return;
+        }
+    }
+
+    console.warn("Tu suscripción no existe");
+    return;
+}
+
+loop(varrandom)
