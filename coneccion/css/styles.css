@@ -8,3 +8,14 @@ body{
     background: linear-gradient(rgba(184, 29, 29, 0.795), rgba(167, 67, 9, 0.87), rgba(199, 39, 106, 0.795));
     
 }
+
+/* Agregandole estilos a un elemento de HTML que no existe dentro del HTML aún.
+
+    Estos estilos se le aplicaran al elemento HTML con la clase 'Smth' cuando sea insertado por el Javascript*/
+.Smth{
+    display:block;
+    width:50%;
+    margin: 0px auto;
+
+}
+
