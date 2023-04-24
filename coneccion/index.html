@@ -10,9 +10,16 @@
 <body>
 
     <h1 class = "platzilg">Manipulación del DOM básica</h1>
-    
+
+    <!-- El atributo onchange nos permite llamar a funciones
+    de Javascript desde el HTML para que se ejecute el código
+    al ocurrir cambios en el valor de los INPUTS-->
     <input id = Calculo1 onchange="num1()" placeholder="escribe algo">
     <input id = Calculo2 onchange="num2()" placeholder="escribe algo"/>
+
+    <!-- El atributo onclick nos permite llamar una función de 
+    javascript para que ejecute su código cuando se haga click 
+    al botón.-->
     <button id = "btnCalcular" onclick="Calculate()">Calcular</button>
     <div class = "show"></div>
 

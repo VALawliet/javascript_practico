@@ -8,6 +8,9 @@ const title = document.querySelector('h1');
 const input = document.querySelector('#Calculo1');
 const input2 = document.querySelector('#Calculo2');
 const btn = document.querySelector('#btrCalcular');
+
+//Seleccionando un nuevo elemento desde Javascript para
+//Utilizarlo en el código.
 const newDiv = document.querySelector('.show');
 
 function num1(){
@@ -22,11 +25,17 @@ function num2(){
 }
 
 function Calculate(){
+
+    //La función Number() nos permite transformar a números todo lo que el usuario escriba.
     let value1 = Number(input.value);
     let value2 = Number(input2.value);
 
+    //Utilizando condicionales para realizar multiples funciones en el HTML
+
     if(isNaN(value1) == true || isNaN(value2)){
         console.log("No se pueden realizar calculos con valores no númericos");
+
+        //Añadiendole cosas al div que seleccionamos antes
         newDiv.innerText = 'No se puede realizar una suma de valores no númericos.'
 
     }else{
