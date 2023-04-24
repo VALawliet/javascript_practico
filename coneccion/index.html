@@ -11,17 +11,22 @@
 
     <h1 class = "platzilg">Manipulación del DOM básica</h1>
 
-    <!-- El atributo onchange nos permite llamar a funciones
-    de Javascript desde el HTML para que se ejecute el código
-    al ocurrir cambios en el valor de los INPUTS-->
-    <input id = Calculo1 onchange="num1()" placeholder="escribe algo">
-    <input id = Calculo2 onchange="num2()" placeholder="escribe algo"/>
+    <form id = "form">
+        <!-- El atributo onchange nos permite llamar a funciones
+        de Javascript desde el HTML para que se ejecute el código
+        al ocurrir cambios en el valor de los INPUTS-->
+        <input id = Calculo1 onchange="num1()" placeholder="escribe algo">
+        <input id = Calculo2 onchange="num2()" placeholder="escribe algo"/>
 
-    <!-- El atributo onclick nos permite llamar una función de 
-    javascript para que ejecute su código cuando se haga click 
-    al botón.-->
-    <button id = "btnCalcular" onclick="Calculate()">Calcular</button>
-    <div class = "show"></div>
+        <!--Los formularios, por defecto, agarran al último botón
+            dentro de ellos y le asignan el valor submit.
+            Para evitar que esto suceda, se le puede agregar
+            el atributo type al botón y darle el valor "button"-->
+        <button type = "button" id = "btnCalcular">Calcular</button>
+    </form>
+    <div class = "show">
+        asdjasj
+    </div>
 
     <script src = "coneccion.js"></script>
     
